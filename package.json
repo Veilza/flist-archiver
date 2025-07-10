@@ -1,0 +1,36 @@
+{
+  "name": "flist-archiver",
+  "version": "1.0.0",
+  "description": "A utility tool that allows a user to archive their F-List data.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "build": "vite build",
+    "serve": "NODE_ENV=production node index.js",
+    "dev:server": "nodemon index.js",
+    "dev:client": "vite",
+    "dev": "concurrently \"npm:dev:server\" \"npm:dev:client\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Veilza/flist-archiver.git"
+  },
+  "author": "Veilza",
+  "license": "GPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/Veilza/flist-archiver/issues"
+  },
+  "homepage": "https://github.com/Veilza/flist-archiver#readme",
+  "dependencies": {
+    "express": "^5.1.0",
+    "jszip": "^3.10.1",
+    "node-fetch": "^3.3.2",
+    "vue": "^3.5.17"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^6.0.0",
+    "concurrently": "^9.2.0",
+    "nodemon": "^3.1.10",
+    "vite": "^7.0.3"
+  }
+}
